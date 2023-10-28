@@ -44,7 +44,7 @@ func TestHashFunction(t *testing.T) {
 	hash, _ := HashPassword(userdata.Password)
 	fmt.Println("Hash Password : ", hash)
 	match := CheckPasswordHash(userdata.Password, res.Password)
-	fmt.Println("Match:   ", match)
+	fmt.Println("Match:  ", match)
 
 }
 
