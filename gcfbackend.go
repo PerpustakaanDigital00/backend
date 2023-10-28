@@ -51,5 +51,5 @@ func InsertUser(db *mongo.Database, collection string, userdata User) string {
 	hash, _ := HashPassword(userdata.Password)
 	userdata.Password = hash
 	atdb.InsertOneDoc(db, collection, userdata)
-	return "Ini username : " + userdata.Username + "ini password : " + userdata.Password
+	return "Ini username :  " + userdata.Username + "ini password : " + userdata.Password
 }
