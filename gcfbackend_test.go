@@ -52,7 +52,7 @@ func TestIsPasswordValid(t *testing.T) {
 	mconn := SetConnection("MONGOSTRING", "perpus")
 	var userdata User
 	userdata.Username = "perpuscoba"
-	userdata.Password = "perpusdotcom"
+	userdata.Password = ""
 
 	anu := IsPasswordValid(mconn, "user", userdata)
 	fmt.Println(anu)
