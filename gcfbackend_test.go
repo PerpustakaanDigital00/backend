@@ -64,6 +64,6 @@ func TestInsertUser(t *testing.T) {
 	userdata.Username = "perpuscoba"
 	userdata.Password = "perpusdotcom"
 
-	nama := InsertUser(mconn, "", userdata)
+	nama := InsertUser(mconn, "user", userdata)
 	fmt.Println(nama)
 }
