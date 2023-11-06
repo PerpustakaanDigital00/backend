@@ -35,7 +35,7 @@ func TestGeneratePrivateKeyPaseto(t *testing.T) {
 func TestHashFunction(t *testing.T) {
 	mconn := SetConnection("MONGOSTRING", "perpus")
 	var userdata User
-	userdata.Username = "perpuscoba"
+	userdata.Username = ""
 	userdata.Password = "perpusdotcom"
 
 	filter := bson.M{"username": userdata.Username}
